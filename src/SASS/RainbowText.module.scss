@@ -1,0 +1,49 @@
+div.DivCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h1.RainbowText {
+  cursor: pointer;
+  display: inline;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+h1.RainbowText:hover {
+  background-color: rgba(37, 37, 37, 0.5);
+  animation: Rainbow 0.5s ease-in-out infinite;
+}
+
+@keyframes Rainbow {
+  0% {
+    color: #ff0000;
+  }
+  13% {
+    color: #ff7f00;
+  }
+  26% {
+    color: #ffff00;
+  }
+  38% {
+    color: #00ff00;
+  }
+  51% {
+    color: #00ffff;
+  }
+  63% {
+    color: #0000ff;
+  }
+  76% {
+    color: #7f00ff;
+  }
+  88% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
