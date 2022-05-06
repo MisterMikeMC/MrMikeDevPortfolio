@@ -1,7 +1,90 @@
+/* Normal Bar */
+
 header.PageHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
+  display: block;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  background-color: #333;
+}
+
+div.GridTwoColums {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 5px 75px;
+}
+
+div.GridOne {
+  display: flex;
+  text-align: left;
+  min-height: 100%;
+}
+
+img.ImagenLogo {
+  width: 75px;
+  border: #fff solid 1px;
+  border-radius: 50%;
+}
+
+div.GridTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  text-align: right;
+}
+
+li.ListItem {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+a.HeaderLink {
+  font-size: 1.4rem;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 603px) {
+    body {
+      background-color: #f00;
+    }
+  }
+/* Mobile Bar */
+
+header.PageHeaderColumsActivate {
+  display: block;
+  width: 100%;
+  height: 320px;
+  position: fixed;
+  background-color: #333;
+}
+
+div.GridTwoColumsActivate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+div.GridOneActivate {
+  display: flex;
+  min-height: 100%;
+}
+
+div.GridTwoActivate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+li.ListItemActivate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
